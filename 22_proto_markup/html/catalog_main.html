@@ -1,0 +1,340 @@
+  <!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      #myCarousel {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .carousel-control {
+        top: 50%;
+      }
+      .carousel-control-prev, .carousel-control-next {
+        background: none;
+        color: black;
+        font-size: 40px;
+        border: none;
+      }
+      .carousel-control-prev {margin-left: -60px;}
+      .carousel-control-next {margin-right: -60px;}
+
+      @media all and (max-width: 479px) {
+        .nav-tabs--vertical {
+          border-bottom: none;
+          display: flex;
+          flex-flow: column nowrap;
+        }
+        .nav-tabs--left .nav-item + .nav-item {
+          margin: .25rem;
+        }
+        .nav-tabs--left .nav-link {
+          transition: border-color .125s ease-in;
+          white-space: nowrap;
+        }
+        .nav-tabs--left .nav-link:hover {
+          background-color: #f7f7f7;
+          border-color: transparent;
+        }
+        .nav-tabs--left .nav-link.active {
+          border-color: #ddd;
+          border-radius: 0.25rem;
+          margin-right: -1px;
+        }
+        .nav-tabs--left .nav-link.active:hover {
+          background-color: #fff;
+          border-color: #0275d8;
+        }
+      }
+      @media all and (min-width: 480px) {
+        .nav-tabs--vertical {
+          border-bottom: none;
+          border-right: 1px solid #ddd;
+          display: flex;
+          flex-flow: column nowrap;
+        }
+        .nav-tabs--left {
+          margin: 0 15px;
+        }
+        .nav-tabs--left .nav-item + .nav-item {
+          margin-top: .25rem;
+        }
+        .nav-tabs--left .nav-link {
+          transition: border-color .125s ease-in;
+          white-space: nowrap;
+        }
+        .nav-tabs--left .nav-link:hover {
+          background-color: #f7f7f7;
+          border-color: transparent;
+        }
+        .nav-tabs--left .nav-link.active {
+          border-bottom-color: #ddd;
+          border-right-color: #fff;
+          border-bottom-left-radius: 0.25rem;
+          border-top-right-radius: 0;
+          margin-right: -1px;
+        }
+        .nav-tabs--left .nav-link.active:hover {
+          background-color: #fff;
+          border-color: #0275d8 #fff #0275d8 #0275d8;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        h1{
+          font-size:30px;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        input[type=text]{
+           width:100%;
+        }
+      }
+    </style>
+    <title>
+      Каталог организаций
+    </title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            Регион:
+            <div class="btn-group">
+              <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                <u>Новосибирск и область</u>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Леонид Федорович</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">выход</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="d-flex flex-row">
+        <div class="p-2 my-auto">
+          <img src="http://lorempixel.com/64/64/" alt="Logo">
+          Логотип
+        </div>
+        <div class="p-2 my-auto">
+          <a href="#">Главная</a> > Каталог организаций
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-md-center my-2">
+        <div class="col-auto">
+          <img src="http://lorempixel.com/400/200/" alt="ЖБИ" class="img-fluid">
+          <div class="mt-2"><a href="#">ЖБИ</a></div>
+        </div>
+        <div class="col-auto">
+          <img src="http://lorempixel.com/400/200/" alt="Кирпич, газобетон, брус" class="img-fluid">
+          <div class="mt-2"><a href="#">Кирпич, газобетон, брус</a></div>
+        </div>
+      </div>
+      <div class="row justify-content-md-center my-2">
+        <div class="col-auto">
+          <img src="http://lorempixel.com/400/200/" alt="Что-то еще" class="img-fluid">
+          <div class="mt-2"><a href="#">Что-то еще</a></div>
+        </div>
+        <div class="col-auto">
+          <img src="http://lorempixel.com/400/200/" alt="Что-то еще" class="img-fluid">
+          <div class="mt-2"><a href="#">Что-то еще</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row my-2">
+        <div class="col-12">
+          <h1 class="text-center">Все&nbsp;производители и&nbsp;оптовые компании</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          
+                      <div class="media p-3 border border-dark">
+            <img class="d-flex mr-3" src="http://lorempixel.com/64/64/people/" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">ООО Строй-сервис-монтаж</h5>
+              <p class="my-0"><strong>Место деятельности:</strong> Новосибирск</p>
+              <p class="my-0"><strong>Продукция:</strong> ЖБИ, бетон</p>
+              <p class="my-0"><strong>Адрес:</strong> Под часами, на том-же месте</p>
+              <p class="my-1"><strong>Телефон:</strong> 000-00-00</p>
+            </div>
+          </div>
+          
+                      <div class="media p-3 border border-dark">
+            <img class="d-flex mr-3" src="http://lorempixel.com/64/64/people/" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">ООО Строй-сервис-монтаж</h5>
+              <p class="my-0"><strong>Место деятельности:</strong> Новосибирск</p>
+              <p class="my-0"><strong>Продукция:</strong> ЖБИ, бетон</p>
+              <p class="my-0"><strong>Адрес:</strong> Под часами, на том-же месте</p>
+              <p class="my-1"><strong>Телефон:</strong> 000-00-00</p>
+            </div>
+          </div>
+          
+                      <div class="media p-3 border border-dark">
+            <img class="d-flex mr-3" src="http://lorempixel.com/64/64/people/" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">ООО Строй-сервис-монтаж</h5>
+              <p class="my-0"><strong>Место деятельности:</strong> Новосибирск</p>
+              <p class="my-0"><strong>Продукция:</strong> ЖБИ, бетон</p>
+              <p class="my-0"><strong>Адрес:</strong> Под часами, на том-же месте</p>
+              <p class="my-1"><strong>Телефон:</strong> 000-00-00</p>
+            </div>
+          </div>
+          
+                      <div class="media p-3 border border-dark">
+            <img class="d-flex mr-3" src="http://lorempixel.com/64/64/people/" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">ООО Строй-сервис-монтаж</h5>
+              <p class="my-0"><strong>Место деятельности:</strong> Новосибирск</p>
+              <p class="my-0"><strong>Продукция:</strong> ЖБИ, бетон</p>
+              <p class="my-0"><strong>Адрес:</strong> Под часами, на том-же месте</p>
+              <p class="my-1"><strong>Телефон:</strong> 000-00-00</p>
+            </div>
+          </div>
+          
+                      <div class="media p-3 border border-dark">
+            <img class="d-flex mr-3" src="http://lorempixel.com/64/64/people/" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">ООО Строй-сервис-монтаж</h5>
+              <p class="my-0"><strong>Место деятельности:</strong> Новосибирск</p>
+              <p class="my-0"><strong>Продукция:</strong> ЖБИ, бетон</p>
+              <p class="my-0"><strong>Адрес:</strong> Под часами, на том-же месте</p>
+              <p class="my-1"><strong>Телефон:</strong> 000-00-00</p>
+            </div>
+          </div>
+          
+                      <div class="media p-3 border border-dark">
+            <img class="d-flex mr-3" src="http://lorempixel.com/64/64/people/" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">ООО Строй-сервис-монтаж</h5>
+              <p class="my-0"><strong>Место деятельности:</strong> Новосибирск</p>
+              <p class="my-0"><strong>Продукция:</strong> ЖБИ, бетон</p>
+              <p class="my-0"><strong>Адрес:</strong> Под часами, на том-же месте</p>
+              <p class="my-1"><strong>Телефон:</strong> 000-00-00</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-12 col-lg-2">
+          <button type="button" class="btn btn-outline-dark mt-3 mt-lg-0">Оставить заявку</button>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#!" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+              <li class="page-item"><a class="page-link" href="#!">2</a></li>
+              <li class="page-item"><a class="page-link" href="#!">3</a></li>
+              <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+              <li class="page-item"><a class="page-link" href="#!">10</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#!" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <a href="#">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container-fluid bg-light border border-dark border-right-0 border-left-0 border-bottom-0">
+      <div class="row text-center">
+        <div class="col-12">
+          <h3 class="p-4">Вы поставщик?</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 px-sm-5">
+          <p>Для доступа к&nbsp;телефонам покупателей заполните форму или&nbsp;позвоните нам <span style="white-space: nowrap;">+7 999 888-77-66</span></p>
+          <p>Текст с&nbsp;дополнительной информацией по&nbsp;условиям сотрудничества.</p>
+          <p>Возможно, стоит вынести его на&nbsp;отдельную страницу. Текст с&nbsp;дополнительной информацией по&nbsp;условиям сотрудничества.</p>
+          <p>Возможно, стоит вынести его на&nbsp;отдельную страницу.</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <form>
+            <div class="form-group row">
+              <label for="colFormLabel1" class="col-sm-4 col-form-label text-lg-right">Организация</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" id="colFormLabel1" placeholder="Организация">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="colFormLabel2" class="col-sm-4 col-form-label text-lg-right">Телефон</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" id="colFormLabel2" placeholder="Телефон">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="colFormLabe3" class="col-sm-4 col-form-label text-lg-right">Email</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control form-control-sm" id="colFormLabe3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="colFormLabel4" class="col-sm-4 col-form-label text-lg-right">Имя</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" id="colFormLabel4" placeholder="Имя">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-8 offset-sm-4">
+                <button type="submit" class="btn btn-outline-dark btn-sm">Отправить информацию</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

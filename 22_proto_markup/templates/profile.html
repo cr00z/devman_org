@@ -1,0 +1,54 @@
+  {% extends "_base.html" %}
+  {% block title %}Профиль{% endblock %}
+  {% block content %}
+    <div class="container-fluid">
+      <div class="d-flex flex-row">
+        <div class="p-2 my-auto">
+          <img src="http://lorempixel.com/64/64/" alt="Logo">
+          Логотип
+        </div>
+        <div class="p-2 my-auto">
+          <a href="#">Главная</a> > Личный кабинет
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="d-flex flex-wrap">
+        <div class="flex-md-grow-1">
+          <h1>Личный кабинет</h1>
+        </div>
+        <div class="flex-md-grow-0 align-self-end">
+          <a href="#">Перейти к заявкам</a>
+        </div>
+      </div>
+      <div class="d-flex flex-row flex-wrap my-4">
+        <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="tablist">
+          <li class="nav-item">
+            <a href="#my_org" class="nav-link active" data-toggle="tab" role="tab" aria-controls="my_org">Моя организация</a>
+          </li>
+          <li class="nav-item">
+            <a href="#ch_pass" class="nav-link" data-toggle="tab" role="tab" aria-controls="ch_pass">Смена пароля</a>
+          </li>
+          <li class="nav-item">
+            <a href="#spam_list" class="nav-link" data-toggle="tab" role="tab" aria-controls="spam_list">Моя рассылка</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="my_org" role="tabpanel">
+            <h2>Моя организация</h2>
+            <p>Редактирование информации об организации.</p>
+         </div>
+          <div class="tab-pane fade" id="ch_pass" role="tabpanel">
+            <h2>Смена пароля</h2>
+            <p>Запрос на смену пароля.</p>
+          </div>
+          <div class="tab-pane fade" id="spam_list" role="tabpanel">
+            <h2>Моя рассылка</h2>
+            <p>Нещадно спамим всем клиентам.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  {% endblock %}

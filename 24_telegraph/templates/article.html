@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+      <p style="font-size:200%">{{ article_info.header }}</p>
+      <p style="color:gray">created by {{ article_info.signature }}</p>
+      {% if edit_mode %}
+        <a href="/edit/{{ article_uid }}">Редактировать</a>
+      {% endif %}
+      <hr/>
+      {% for paragraph in article_info.body %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+{% endblock %}
