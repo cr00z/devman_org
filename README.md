@@ -34,11 +34,15 @@
 * Frontend for SPA «ПомойАвто»
 * Timer for Websites That Steal Your Time
 
-**Keywords:** HTML, Python, JSON, unittest, parsing, API, Bootstrap, Markdown,
+**Keywords:**
+
+HTML, Python, JSON, unittest, parsing, API, Bootstrap, Markdown,
 Jinja2, Flask, Gunicorn, Heroku, Git, SqlAlchemy, Telegram API, microservices,
 Nginx ...
 
-**Python libraries:** argparse, bs4, collections, datetime, 
+**Python libraries:**
+
+argparse, bs4, collections, datetime, 
 fake_useragent, flask, flask_sqlalchemy, functools, getpass, html, itertools,
 jinja2, json, livereload, logging, lxml, markdown, math, openpyxl, os, PIL,
 phonenumbers, pytz, random, re, requests, sqlalchemy, staticjinja, telebot,
